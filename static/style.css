@@ -1,0 +1,42 @@
+#form {
+	margin: auto;
+	width: 350px;
+	height: 350px;
+	border:2px solid black;
+	background-color: lightblue;
+}
+
+div {
+	margin : 8px;
+	padding: 10px;
+}
+
+input[type="text"], select {
+	width: 50%;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	float: right;
+}
+
+textarea {
+	width: 97%;
+	height: 80px;
+}
+
+input[type="submit"] {
+	float: right;
+	width: 200px;
+	height: 40px;
+	background: blue;
+	border: none;
+	box-shadow: 5px 5px 3px #888888;
+}
+label {
+	width: 50%;	
+}
+label.val {
+	float: right;
+}
+body {
+	background-color: blue;
+}

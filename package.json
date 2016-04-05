@@ -1,0 +1,10 @@
+{
+  "name": "survey_form_proj",
+  "description": "Sample Survey Form Application to test out using Package.json to install dependencies and post data",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "ejs": "1.0.0",
+    "express": "^4.10.8",
+    "socket.io": "^1.4.5"
+  }
+}

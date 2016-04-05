@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<center><h2>Survey Form</h2></center>
+	<form action="/" method="get" id="form">
+	<b><ul>Submitted Information</ul></b>
+	  	<div>
+		    Name:<%= user_data.name %>
+		</div>
+		<div>
+		    Dojo Location:<%= user_data.dojo_location %>
+		</div>
+		<div>
+		    Favorite Language:<%= user_data.favorite_language %>
+		</div>
+		<div>
+		    Comment (optional):<%= user_data.comment %>
+		</div>
+		<div>
+			<input type="submit" align="right" value="Go Back">
+		</div>
+	</form>
+</body>
+</html>
