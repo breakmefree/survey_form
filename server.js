@@ -23,15 +23,6 @@ app.post('/result', function(req, res) {
 	res.render("result",{user_data: submitted_info});
 })
 // tell the express app to listen on port 8000
-var server = app.listen(8000, function() {
+app.listen(8000, function() {
  console.log("listening on port 8000");
-})
-
-var io = require('socket.io').listen(server);
-io.sockets.on('connection', function(socket) {
-	// If you don't know where this code is supposed to go reread the above info 
-	socket.on("button_clicked", function (data){
-	    console.log('Someone clicked a button!  Reason: ' + data.reason);
-	    socket.emit('server_response', {response: "sockets are the best!"});
-	});
 })
